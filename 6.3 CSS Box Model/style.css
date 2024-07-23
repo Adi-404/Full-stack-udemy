@@ -1,0 +1,26 @@
+div{
+    height: 200px;
+    width: 200px;
+  }
+  p{
+    margin: 0;
+  }
+  #first{
+    padding: 20;
+    border: 10pt solid black;
+    border-radius: 10pt;
+    border-color: black;
+    background-color: rgb(239, 23, 23);
+  }
+  #second{
+    border: 10pt solid black;
+    border-color: black;
+    border-width: 10px 20px;
+    margin-left: 200px;
+    border-top: 0;
+    background-color: blue;
+  }
+  #third{
+    border: 10pt solid burlywood;
+    background-color: brown;
+  }
