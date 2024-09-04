@@ -6,7 +6,20 @@ document.querySelectorAll("button")[i].addEventListener("click",function () {
     //what to do when click detected.
     var buttonInnerHTML = this.innerHTML;
 
-    switch(buttonInnerHTML){
+    makeSound(buttonInnerHTML);
+
+   
+} );
+}
+
+addEventListener("keydown",function(event){
+    makeSound(event.key);
+    
+});
+
+function makeSound (key){
+
+    switch(key){
         case "w":
             var audio = new Audio('sounds/tom-1.mp3');
             audio.play();
@@ -49,8 +62,4 @@ document.querySelectorAll("button")[i].addEventListener("click",function () {
             console.log();
     }
 
-   
-} );
 }
-
-
