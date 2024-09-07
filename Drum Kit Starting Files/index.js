@@ -7,6 +7,7 @@ document.querySelectorAll("button")[i].addEventListener("click",function () {
     var buttonInnerHTML = this.innerHTML;
 
     makeSound(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
 
    
 } );
@@ -14,6 +15,8 @@ document.querySelectorAll("button")[i].addEventListener("click",function () {
 
 addEventListener("keydown",function(event){
     makeSound(event.key);
+
+    buttonAnimation(event.key);
     
 });
 
@@ -61,5 +64,10 @@ function makeSound (key){
         default:
             console.log();
     }
+
+}
+
+
+function buttonAnimation(currentKey){
 
 }
